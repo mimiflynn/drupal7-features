@@ -153,7 +153,7 @@ function code_snippets_field_default_fields() {
   $fields['node-code_snippet-field_code_language'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '5',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_code_language',
