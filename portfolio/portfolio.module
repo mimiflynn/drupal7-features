@@ -6,36 +6,38 @@
 
 include_once('portfolio.features.inc');
 
-function portfolio_imagecache_default_presets() {
-  $presets = array();
-  $presets['portfolio_thumbnail'] = array (
-    'presetname' => 'portfolio_thumbnail',
-    'actions' => array (
-      0 => array (
-        'weight' => '0',
-        'module' => 'imagecache',
-        'action' => 'imagecache_scale_and_crop',
-        'data' => array (
-          'width' => '100',
-          'height' => '100',
-        ),
+function portfolio_image_default_styles() {
+  $styles = array();
+
+  $styles['portfolio_thumbnail'] = array(
+    'effects' => array(
+      array(
+        'name' => 'portfolio_thumbnail', 
+        'data' => array(
+          'width' => 100,
+          'height' => 100,
+          'upscale' => 1,
+        ), 
+        'weight' => 0,
       ),
     ),
   );
-  $presets['portfolio_slideshow'] = array (
-    'presetname' => 'portfolio_slideshow',
-    'actions' => array (
-      0 => array (
-        'weight' => '0',
-        'module' => 'imagecache',
-        'action' => 'imagecache_scale_and_crop',
-        'data' => array (
-          'width' => '800',
-          'height' => '500',
-        ),
+
+  $styles['portfolio_slideshow'] = array(
+    'effects' => array(
+      array(
+        'name' => 'portfolio_slideshow', 
+        'data' => array(
+          'width' => 800,
+          'height' => 500,
+          'upscale' => 1,
+        ), 
+        'weight' => 0,
       ),
     ),
   );
-  return $presets;
+
+  return $styles;
 }
+
 
