@@ -39,5 +39,3 @@ function portfolio_image_default_styles() {
 
   return $styles;
 }
-
-
