@@ -6,6 +6,10 @@
 
 include_once('portfolio.features.inc');
 
+/**
+ * Implementation of the hook_image_default_styles
+ * http://api.drupal.org/api/drupal/modules--image--image.api.php/function/hook_image_default_styles/7
+ */
 function portfolio_image_default_styles() {
   $styles = array();
 

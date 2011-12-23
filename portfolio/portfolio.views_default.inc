@@ -147,6 +147,7 @@ function portfolio_views_default_views() {
   $handler->display->display_options['fields']['field_project_image']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_project_image']['alter']['ellipsis'] = 1;
@@ -157,15 +158,17 @@ function portfolio_views_default_views() {
   $handler->display->display_options['fields']['field_project_image']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['field_project_image']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_project_image']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_project_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_project_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'portfolio_slideshow',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_project_image']['group_column'] = 'fid';
   $handler->display->display_options['fields']['field_project_image']['group_rows'] = 1;
   $handler->display->display_options['fields']['field_project_image']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_project_image']['delta_reversed'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['field_project_image']['field_api_classes'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -248,6 +251,7 @@ function portfolio_views_default_views() {
   $handler->display->display_options['fields']['field_project_image']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['external'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['field_project_image']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['field_project_image']['alter']['ellipsis'] = 1;
@@ -258,15 +262,17 @@ function portfolio_views_default_views() {
   $handler->display->display_options['fields']['field_project_image']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['field_project_image']['hide_empty'] = 0;
   $handler->display->display_options['fields']['field_project_image']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['field_project_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_project_image']['settings'] = array(
-    'image_style' => '',
+    'image_style' => 'portfolio_thumbnail',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_project_image']['group_column'] = 'fid';
   $handler->display->display_options['fields']['field_project_image']['group_rows'] = 1;
   $handler->display->display_options['fields']['field_project_image']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_project_image']['delta_reversed'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['field_project_image']['field_api_classes'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
