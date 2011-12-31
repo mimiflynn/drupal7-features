@@ -15,6 +15,7 @@ function portfolio_user_default_permissions() {
     'name' => 'create portfolio_entry content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -24,6 +25,7 @@ function portfolio_user_default_permissions() {
     'name' => 'delete any portfolio_entry content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -33,6 +35,7 @@ function portfolio_user_default_permissions() {
     'name' => 'delete own portfolio_entry content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -42,6 +45,7 @@ function portfolio_user_default_permissions() {
     'name' => 'edit any portfolio_entry content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -51,6 +55,7 @@ function portfolio_user_default_permissions() {
     'name' => 'edit own portfolio_entry content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
