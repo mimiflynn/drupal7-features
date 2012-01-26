@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function portfolio_field_default_fields() {
   $fields = array();
@@ -84,14 +84,14 @@ function portfolio_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-portfolio_entry-field_featured_image'
-  $fields['node-portfolio_entry-field_featured_image'] = array(
+  // Exported field: 'node-portfolio_entry-field_featured_project_image'
+  $fields['node-portfolio_entry-field_featured_project_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_featured_image',
+      'field_name' => 'field_featured_project_image',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -105,28 +105,26 @@ function portfolio_field_default_fields() {
           0 => 'fid',
         ),
       ),
-      'module' => 'image',
+      'module' => 'file',
       'settings' => array(
-        'default_image' => 0,
+        'display_default' => 1,
+        'display_field' => 0,
         'uri_scheme' => 'public',
       ),
-      'translatable' => '1',
-      'type' => 'image',
+      'translatable' => '0',
+      'type' => 'file',
     ),
     'field_instance' => array(
       'bundle' => 'portfolio_entry',
       'deleted' => '0',
-      'description' => 'The image that best describes this project that will appear in slideshows and lists.',
+      'description' => 'Image that is used to represent the entire project on summary pages and carousel navigation.',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => 'large',
-          ),
-          'type' => 'image',
-          'weight' => '0',
+          'label' => 'above',
+          'module' => 'file',
+          'settings' => array(),
+          'type' => 'file_default',
+          'weight' => 3,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -136,27 +134,23 @@ function portfolio_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_featured_image',
-      'label' => 'Featured Image',
-      'required' => 1,
+      'field_name' => 'field_featured_project_image',
+      'label' => 'Featured Project Image',
+      'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
-        'file_directory' => '',
-        'file_extensions' => 'png gif jpg jpeg',
+        'description_field' => 0,
+        'file_directory' => 'featured-project-image',
+        'file_extensions' => 'jpg png gif tiff jpeg',
         'max_filesize' => '',
-        'max_resolution' => '',
-        'min_resolution' => '',
-        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'image',
+        'module' => 'file',
         'settings' => array(
-          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
-        'type' => 'image_image',
+        'type' => 'file_generic',
         'weight' => '1',
       ),
     ),
@@ -194,14 +188,14 @@ function portfolio_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'portfolio_entry',
       'deleted' => '0',
-      'description' => 'Screenshot or photo of the project. If more than one then a slideshow will display.',
+      'description' => 'If more than one then a slideshow will display.',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
-            'image_style' => 'medium',
+            'image_style' => '',
           ),
           'type' => 'image',
           'weight' => '0',
@@ -215,7 +209,7 @@ function portfolio_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_project_image',
-      'label' => 'Image',
+      'label' => 'Image Gallery',
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
@@ -235,18 +229,18 @@ function portfolio_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Featured Image');
-  t('Image');
+  t('Featured Project Image');
+  t('If more than one then a slideshow will display.');
+  t('Image Gallery');
+  t('Image that is used to represent the entire project on summary pages and carousel navigation.');
   t('Project Description');
-  t('Screenshot or photo of the project. If more than one then a slideshow will display.');
-  t('The image that best describes this project that will appear in slideshows and lists.');
 
   return $fields;
 }

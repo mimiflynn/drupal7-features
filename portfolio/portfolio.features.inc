@@ -5,17 +5,17 @@
  */
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_views_api().
  */
 function portfolio_views_api() {
   list($module, $api) = func_get_args();
   if ($module == "views" && $api == "views_default") {
-    return array("version" => 3.0);
+    return array("version" => "3.0");
   }
 }
 
 /**
- * Implementation of hook_node_info().
+ * Implements hook_node_info().
  */
 function portfolio_node_info() {
   $items = array(

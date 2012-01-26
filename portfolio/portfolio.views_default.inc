@@ -5,7 +5,7 @@
  */
 
 /**
- * Implementation of hook_views_default_views().
+ * Implements hook_views_default_views().
  */
 function portfolio_views_default_views() {
   $export = array();
@@ -34,7 +34,7 @@ function portfolio_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'node';
   $handler->display->display_options['row_options']['view_mode'] = 'full';
   $handler->display->display_options['row_options']['links'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Content: Image Gallery */
   $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
   $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
   $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
@@ -137,34 +137,36 @@ function portfolio_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = 1;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Featured Image */
-  $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
-  $handler->display->display_options['fields']['field_featured_image']['label'] = '';
-  $handler->display->display_options['fields']['field_featured_image']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_featured_image']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['field_featured_image']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['field_featured_image']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
-    'image_style' => 'large',
-    'image_link' => '',
+  /* Field: Content: Image Gallery */
+  $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
+  $handler->display->display_options['fields']['field_project_image']['label'] = '';
+  $handler->display->display_options['fields']['field_project_image']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['field_project_image']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['field_project_image']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_project_image']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['field_project_image']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_project_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => 'content',
   );
-  $handler->display->display_options['fields']['field_featured_image']['field_api_classes'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['group_column'] = 'fid';
+  $handler->display->display_options['fields']['field_project_image']['group_rows'] = 1;
+  $handler->display->display_options['fields']['field_project_image']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_project_image']['delta_reversed'] = 0;
+  $handler->display->display_options['fields']['field_project_image']['field_api_classes'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -191,12 +193,12 @@ function portfolio_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['alter_text'] = 0;
   $handler->display->display_options['fields']['body']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['body']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['body']['alter']['external'] = 0;
   $handler->display->display_options['fields']['body']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['body']['alter']['trim_whitespace'] = 0;
   $handler->display->display_options['fields']['body']['alter']['nl2br'] = 0;
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = 1;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = 1;
@@ -207,7 +209,6 @@ function portfolio_views_default_views() {
   $handler->display->display_options['fields']['body']['element_default_classes'] = 1;
   $handler->display->display_options['fields']['body']['hide_empty'] = 0;
   $handler->display->display_options['fields']['body']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['body']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['body']['field_api_classes'] = 0;
   $handler->display->display_options['path'] = 'portfolio';
   $handler->display->display_options['menu']['type'] = 'normal';
@@ -232,12 +233,13 @@ function portfolio_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_options']['grouping'] = '';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Content: Image Gallery */
   $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
   $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
   $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
@@ -321,7 +323,7 @@ function portfolio_views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = 0;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Image */
+  /* Field: Content: Image Gallery */
   $handler->display->display_options['fields']['field_project_image']['id'] = 'field_project_image';
   $handler->display->display_options['fields']['field_project_image']['table'] = 'field_data_field_project_image';
   $handler->display->display_options['fields']['field_project_image']['field'] = 'field_project_image';
