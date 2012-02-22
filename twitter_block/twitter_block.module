@@ -1,0 +1,14 @@
+<?php
+
+function twitter_block_twitter_pull_blocks() {
+  return array(
+    0 => (object) array(
+      'delta' => 'andy_hickl_twitter',
+      'tweetkey' => 'andyhickl',
+      'title' => 'Andy Hickl Twitter Feed',
+      'name'  => 'Andy Hickl Twitter Feed',    
+      'number_of_items' => 5,
+      'theme_key' => 'twitter_pull_listing',    
+    )
+  ); 
+}
