@@ -1,5 +1,9 @@
-core = "7.x"
-dependencies[] = "twitter_pull"
 description = "Andy Hickl Twitter Block"
 name = "Andy Hickl Twitter Block"
+
+core = "7.x"
+dependencies[] = "twitter_pull"
 php = "5.2.4"
+
+stylesheets[all][]   = css/twitter_block.css
+scripts[]   = js/collapse.js
