@@ -7,7 +7,7 @@ function twitter_block_twitter_pull_blocks() {
       'tweetkey' => 'andyhickl',
       'title' => 'Happening Now',
       'name'  => 'Andy Hickl Twitter Feed',    
-      'number_of_items' => 5,
+      'number_of_items' => 3,
       'theme_key' => 'twitter_pull_listing',    
     )
   ); 
