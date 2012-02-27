@@ -20,7 +20,7 @@ function resume_views_api() {
 function resume_node_info() {
   $items = array(
     'resume_position' => array(
-      'name' => t('Resume Position'),
+      'name' => t('Job Position'),
       'base' => 'node_content',
       'description' => t('A position to add to your resume.'),
       'has_title' => '1',
