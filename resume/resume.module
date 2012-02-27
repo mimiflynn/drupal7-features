@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Resume feature.
+ */
+
+include_once('resume.features.inc');
