@@ -10,11 +10,11 @@
         $(this).next().animate({
           'margin-left': '0px',
           'margin-right': '0px'
-        });
+        },600);
         $(this).animate({
           'margin-left': '0px',
           'margin-right': '0px'
-        },600);
+        });
         $.cookie('twitter', 'open', { path: '/' });
         $(this).removeClass('closed').addClass('open').children('span').text('offX');
       } else {
