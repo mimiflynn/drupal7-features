@@ -14,7 +14,7 @@
         $(this).animate({
           'margin-left': '0px',
           'margin-right': '0px'
-        });
+        },600);
         $.cookie('twitter', 'open', { path: '/' });
         $(this).removeClass('closed').addClass('open').children('span').text('offX');
       } else {
@@ -25,7 +25,7 @@
         $(this).animate({
           'margin-left': '-285px',
           'margin-right': '285px'
-        })
+        },600)
         $.cookie('twitter', 'closed', { path: '/' });
         $(this).removeClass('open').addClass('closed').children('span').text('+on');
       }
