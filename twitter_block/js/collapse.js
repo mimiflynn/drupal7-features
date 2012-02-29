@@ -7,11 +7,25 @@
     }
     $('.block-twitter-pull .tweets-pulled-listing h2').click(function(){
       if ($(this).hasClass('closed')) {
-        $(this).next().show();
+        $(this).next().animate({
+          'margin-left': '0px',
+          'margin-right': '0px'
+        });
+        $(this).animate({
+          'margin-left': '0px',
+          'margin-right': '0px'
+        });
         $.cookie('twitter', 'open', { path: '/' });
         $(this).removeClass('closed').addClass('open').children('span').text('offX');
       } else {
-        $(this).next().hide();
+        $(this).next().animate({
+          'margin-left': '-300px',
+          'margin-right': '300px'
+        });
+        $(this).animate({
+          'margin-left': '-285px',
+          'margin-right': '285px'
+        })
         $.cookie('twitter', 'closed', { path: '/' });
         $(this).removeClass('open').addClass('closed').children('span').text('+on');
       }
