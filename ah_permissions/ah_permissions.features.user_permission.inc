@@ -133,13 +133,19 @@ function ah_permissions_user_default_permissions() {
   // Exported permission: create resume_position content
   $permissions['create resume_position content'] = array(
     'name' => 'create resume_position content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: create school content
   $permissions['create school content'] = array(
     'name' => 'create school content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: customize shortcut links
@@ -174,13 +180,19 @@ function ah_permissions_user_default_permissions() {
   // Exported permission: delete any resume_position content
   $permissions['delete any resume_position content'] = array(
     'name' => 'delete any resume_position content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete any school content
   $permissions['delete any school content'] = array(
     'name' => 'delete any school content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete own page content
@@ -205,13 +217,19 @@ function ah_permissions_user_default_permissions() {
   // Exported permission: delete own resume_position content
   $permissions['delete own resume_position content'] = array(
     'name' => 'delete own resume_position content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete own school content
   $permissions['delete own school content'] = array(
     'name' => 'delete own school content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: delete terms in 1
@@ -246,13 +264,19 @@ function ah_permissions_user_default_permissions() {
   // Exported permission: edit any resume_position content
   $permissions['edit any resume_position content'] = array(
     'name' => 'edit any resume_position content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit any school content
   $permissions['edit any school content'] = array(
     'name' => 'edit any school content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit own page content
@@ -277,13 +301,19 @@ function ah_permissions_user_default_permissions() {
   // Exported permission: edit own resume_position content
   $permissions['edit own resume_position content'] = array(
     'name' => 'edit own resume_position content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit own school content
   $permissions['edit own school content'] = array(
     'name' => 'edit own school content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'authenticated user',
+    ),
+    'module' => 'node',
   );
 
   // Exported permission: edit terms in 1
