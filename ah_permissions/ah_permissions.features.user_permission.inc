@@ -21,6 +21,16 @@ function ah_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: access content overview
+  $permissions['access content overview'] = array(
+    'name' => 'access content overview',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: access overlay
   $permissions['access overlay'] = array(
     'name' => 'access overlay',
