@@ -126,6 +126,7 @@ function ah_permissions_user_default_permissions() {
     'name' => 'create blog_post content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -182,6 +183,7 @@ function ah_permissions_user_default_permissions() {
     'name' => 'delete any blog_post content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -228,6 +230,7 @@ function ah_permissions_user_default_permissions() {
     'name' => 'delete own blog_post content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -284,6 +287,7 @@ function ah_permissions_user_default_permissions() {
     'name' => 'edit any blog_post content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -330,6 +334,7 @@ function ah_permissions_user_default_permissions() {
     'name' => 'edit own blog_post content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );
