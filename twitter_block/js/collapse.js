@@ -28,8 +28,8 @@
         'margin-left': '0px',
         'margin-right': '0px'
       });
-
     }
+
     $('.block-twitter-pull .tweets-pulled-listing h2').click(function(){
       if ($(this).hasClass('closed')) {
         $(this).next().animate({

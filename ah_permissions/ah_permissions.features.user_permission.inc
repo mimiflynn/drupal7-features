@@ -41,6 +41,17 @@ function ah_permissions_user_default_permissions() {
     'module' => 'overlay',
   );
 
+  // Exported permission: access site-wide contact form
+  $permissions['access site-wide contact form'] = array(
+    'name' => 'access site-wide contact form',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'contact',
+  );
+
   // Exported permission: access toolbar
   $permissions['access toolbar'] = array(
     'name' => 'access toolbar',
