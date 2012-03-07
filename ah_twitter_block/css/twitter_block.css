@@ -1,0 +1,10 @@
+.block-twitter-pull .tweets-pulled-listing h2 {
+  cursor: pointer;
+  position: relative;
+}
+.block-twitter-pull .tweets-pulled-listing h2 span {
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
