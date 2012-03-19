@@ -448,6 +448,16 @@ function ah_permissions_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: use text format wysiwyg
+  $permissions['use text format wysiwyg'] = array(
+    'name' => 'use text format wysiwyg',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'authenticated user',
+    ),
+    'module' => 'filter',
+  );
+
   // Exported permission: view own unpublished content
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',

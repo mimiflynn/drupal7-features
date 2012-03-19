@@ -9,6 +9,7 @@ function twitter_block_twitter_pull_blocks() {
       'name'  => 'Andy Hickl Twitter Feed',    
       'number_of_items' => 3,
       'theme_key' => 'twitter_pull_listing',    
+      'cache' => 5,
     )
   ); 
 }
