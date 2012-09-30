@@ -5,12 +5,12 @@
  */
 
 /**
- * Implementation of hook_field_default_fields().
+ * Implements hook_field_default_fields().
  */
 function code_snippets_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-code_snippet-body'
+  // Exported field: 'node-code_snippet-body'.
   $fields['node-code_snippet-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function code_snippets_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '1',
@@ -83,7 +84,7 @@ function code_snippets_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-code_snippet-field_code'
+  // Exported field: 'node-code_snippet-field_code'.
   $fields['node-code_snippet-field_code'] = array(
     'field_config' => array(
       'active' => '1',
@@ -104,6 +105,7 @@ function code_snippets_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
@@ -149,7 +151,7 @@ function code_snippets_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-code_snippet-field_code_language'
+  // Exported field: 'node-code_snippet-field_code_language'.
   $fields['node-code_snippet-field_code_language'] = array(
     'field_config' => array(
       'active' => '1',
@@ -170,12 +172,13 @@ function code_snippets_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'parent' => '0',
             'vocabulary' => 'code_types',
+            'parent' => '0',
           ),
         ),
       ),
@@ -222,7 +225,7 @@ function code_snippets_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-code_snippet-field_links'
+  // Exported field: 'node-code_snippet-field_links'.
   $fields['node-code_snippet-field_links'] = array(
     'field_config' => array(
       'active' => '1',
@@ -243,6 +246,7 @@ function code_snippets_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -288,7 +292,7 @@ function code_snippets_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-code_snippet-field_platform'
+  // Exported field: 'node-code_snippet-field_platform'.
   $fields['node-code_snippet-field_platform'] = array(
     'field_config' => array(
       'active' => '1',
@@ -309,12 +313,13 @@ function code_snippets_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
           0 => array(
-            'parent' => '0',
             'vocabulary' => 'platform',
+            'parent' => '0',
           ),
         ),
       ),

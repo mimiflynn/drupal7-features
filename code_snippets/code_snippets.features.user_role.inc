@@ -5,12 +5,12 @@
  */
 
 /**
- * Implementation of hook_user_default_roles().
+ * Implements hook_user_default_roles().
  */
 function code_snippets_user_default_roles() {
   $roles = array();
 
-  // Exported role: Contributor
+  // Exported role: Contributor.
   $roles['Contributor'] = array(
     'name' => 'Contributor',
     'weight' => '2',
