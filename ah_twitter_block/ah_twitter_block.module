@@ -3,10 +3,10 @@
 function twitter_block_twitter_pull_blocks() {
   return array(
     0 => (object) array(
-      'delta' => 'andy_hickl_twitter',
-      'tweetkey' => '@andyhickl',
+      'delta' => 'mimiflynn_twitter',
+      'tweetkey' => '@mimiflyn',
       'title' => 'Happening Now',
-      'name'  => 'Andy Hickl Twitter Feed',    
+      'name'  => 'Twitter Feed',    
       'number_of_items' => 3,
       'theme_key' => 'twitter_pull_listing',    
       'cache' => 5,
